@@ -21,7 +21,6 @@ A compact, hands‑on collection of JavaScript implementations and practice exam
 - [15. DynamicProgramming.js](15.%20DynamicProgramming.js) — DP examples: [`DynamicProgramming`](15.%20DynamicProgramming.js)  
 - [index.js](index.js) — example runner / entry point  
 - [package.json](package.json) — scripts & deps  
-- desktop.ini
 
 ## ✨ Features
 
