@@ -1,3 +1,7 @@
+//////////////////////////////////////////
+/// DOUBLY LINKED LIST
+//////////////////////////////////////////
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -42,7 +46,7 @@ class DoublyLinkedList {
     // return temp;
 
     if (this.length === 0) return undefined;
-    let temp = this.tail;
+    const temp = this.tail;
     if (this.length === 1) {
       this.head = null;
       this.tail = null;
@@ -219,7 +223,8 @@ class DoublyLinkedList {
       return;
     }
 
-    let dummy = { val: 0, next: this.head, prev: null };
+    const dummy = new Node(0); // ✅ real Node
+    dummy.next = this.head;
     this.head.prev = dummy;
 
     let prev = dummy;

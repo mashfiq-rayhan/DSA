@@ -28,7 +28,7 @@ class Queue {
 
   dequeue() {
     if (this.length === 0) return undefined;
-    let temp = this.first;
+    const temp = this.first;
     if (this.length === 1) {
       this.first = null;
       this.last = null;

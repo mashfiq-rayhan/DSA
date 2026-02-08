@@ -22,9 +22,9 @@ class Heap {
   }
 
   #sinkDown(index) {
-    let maxIndex = index;
     let size = this.#heap.length;
     while (true) {
+      let maxIndex = index;
       let leftIndex = this.#leftChild(index);
       let rightIndex = this.#rightChild(index);
 

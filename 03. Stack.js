@@ -26,13 +26,12 @@ class Stack {
 
   pop() {
     if (this.length === 0) return undefined;
-    let temp = this.top;
+    const temp = this.top;
     this.top = this.top.next;
     temp.next = null;
     this.length--;
     return temp;
   }
-
 }
 
 let myStack = new Stack(1);
@@ -43,7 +42,6 @@ console.log(push2);
 
 const pop2 = myStack.pop();
 console.log(pop2);
-
 
 class ArrayStack {
   constructor() {

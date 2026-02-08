@@ -1,3 +1,7 @@
+//////////////////////////////////////////
+/// LINKED LIST
+//////////////////////////////////////////
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -118,10 +122,10 @@ class LinkedList {
     let next = temp ? temp.next : null;
     let prev = null;
     while (temp) {
-      next = temp.next;
-      temp.next = prev;
-      prev = temp;
-      temp = next;
+      next = temp.next;       // remember who is next
+      temp.next = prev;       // reverse the arrow!
+      prev = temp;            // move prev forward
+      temp = next;            // move to next node
     }
     return this;
   }
